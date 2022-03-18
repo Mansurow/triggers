@@ -59,7 +59,8 @@ def printQNQ(clockString, setString, resetString):
 def onestep_rs_nand():
     print("Ща порешаем, ё-моё...")
 
-    clockString, resetString, setString = get3()
+    #clockString, resetString, setString = get3()
+    clockString, resetString, setString = getClockString(), getResetString(), getSetString()
     print("Clock: ", signal_to_string(clockString))
     print("Reset: ", signal_to_string(resetString))
     print("Set: ", signal_to_string(setString))

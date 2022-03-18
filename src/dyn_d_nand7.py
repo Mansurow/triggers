@@ -44,6 +44,7 @@ def dyn_d_nand():
     print("Ща порешаем, ё-моё...")
 
     clockString, dString, q, nq = get2(False)
+    #clockString, dString = getClockString(), getDString()
     print("Clock: ", signal_to_string(clockString))
     print("D: ", signal_to_string(dString))
     print("Q: ", signal_to_string(q))
