@@ -48,7 +48,11 @@ def printQNQ(setString, resetString):
 def rs_nor():
     print("Ща порешаем, ё-моё...")
 
-    resetString, setString = get2()
+    #resetString, setString = get2()
+    
+    resetString = getResetString()
+    setString = getSetString()
+    
     print("Reset: ", signal_to_string(resetString))
     print("Set: ", signal_to_string(setString))
 
